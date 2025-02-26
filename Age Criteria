@@ -1,0 +1,25 @@
+/*
+Credit Eligibility
+Author: Enosh Maxwell
+Reg No: D33-2453-2023
+Version: 01
+Date: 25 Feb, 2025
+*/
+
+#include <stdio.h> // Preprocessor directive for I/O functions
+
+// Main function
+int main() {
+    // Variable declaration
+    int age;
+    // prompt user to enter age
+    printf("enter your age:");
+    scanf("%d",& age);
+    // Check if user qualifies to vote
+    if (age>18){ 
+    printf("eligible. \n");
+}else{
+printf("not eligible.\n");
+}
+return 0; // execution successful 
+}
