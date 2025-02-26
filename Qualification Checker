@@ -1,0 +1,49 @@
+/*
+Author:Enosh Maxwell
+Reg No:D33-2453-2023
+Loan Eligibility Checker
+Date:26th Feb 2025
+*/
+
+#include <stdio.h>
+
+int main() {
+    int age, credit_score, employment_status, votes = 0;
+    float income;
+
+    printf("Loan Eligibility Checker\n");
+    printf("Qualification Status\n");
+
+    // Collect user inputs
+    printf("Enter your age: ");
+    scanf("%d", &age);
+    printf("Enter your monthly income (in USD): ");
+    scanf("%f", &income);
+    printf("Enter your credit score (300-850): ");
+    scanf("%d", &credit_score);
+    printf("Are you employed? (1 for Yes, 0 for No): ");
+    scanf("%d", &employment_status);
+
+    // Voting system based on criteria
+    votes += (age >= 18);          // 1 vote if age is 18 or above
+    votes += (income >= 2000);     // 1 vote if income is $2000 or more
+    votes += (credit_score >= 650); // 1 vote if credit score is 650 or above
+    votes += employment_status;    // 1 vote if employed (1 for yes)
+
+    // Decision based on votes
+    switch (votes) {
+        case 4:
+            printf("Congratulations! You qualify for the loan.\n");
+            break;
+        case 3:
+            printf("You are eligible but may need better financial stability.\n");
+            break;
+        case 2:
+            printf("You may qualify for a small loan with higher interest.\n");
+            break;
+        default:
+            printf("Sorry, you do not qualify for a loan at this time.\n");
+    }
+
+    return 0;
+}
