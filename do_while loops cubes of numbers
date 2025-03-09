@@ -1,0 +1,19 @@
+/*
+do_while loops cubes of numbers
+Author: Enoshmaxwell
+Reg No:D33-2453-2023
+Date: 7th March 2025
+*/
+
+#include <stdio.h>
+
+int main() {
+    int i = 1; // Start
+
+    do {
+        printf("Cube of %d: %d\n", i, i * i * i);
+        i++; // Step
+    } while (i <= 100); // Stop
+
+    return 0; // Successful execution
+}
