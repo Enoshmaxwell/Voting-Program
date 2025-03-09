@@ -1,0 +1,31 @@
+/*
+For Loops
+Author: Enoshmaxwell
+Reg no: D33-2453-2023
+Date: 5th March 2025
+*/
+
+#include <stdio.h>
+
+int main() {
+    int i, start, stop;
+    int sum = 0;  
+
+    // for start, stop and step
+    printf("Enter the starting value: ");
+    scanf("%d", &start);
+
+    printf("Enter the stopping value: ");
+    scanf("%d", &stop);
+
+   
+    // Counting in ascending order
+    for (i = start; i <= stop; i++) {
+        printf("%d \n", i);
+        sum = i + sum;
+    }
+
+    printf("The sum is %d\n", sum);
+
+    return 0;  // Successful execution
+}
